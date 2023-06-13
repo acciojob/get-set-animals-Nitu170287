@@ -9,8 +9,8 @@ class Animal {
 }
 
 class Dog extends Animal {
-	constructor(){
-		super("dog")
+	constructor(species){
+		super(species)
 	}
 	bark(){
 		console.log(this.makeSound() +" woof")
@@ -18,17 +18,17 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-	constructor(){
-		super("cat")
+	constructor(species){
+		super(species)
 	}
 	purr(){
 		console.log(this.makeSound() +" purr")
 	}
 }
 
-let dog =new Dog();
+let dog =new Dog("dog");
 dog.bark()
-let cat =new Cat();
+let cat =new Cat("cat");
 cat.purr()
 
 // Do not change the code below this line
